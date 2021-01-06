@@ -17,6 +17,5 @@ app.post('/login', function (req, res) {
     res.send(req.body)
   })
   
-  app.listen(2021, function () {
-    console.log('Nodejs app listening on port 2021')
-  })
+ app.listen(process.env.PORT || 3000, 
+	() => console.log("Server is running..."));
